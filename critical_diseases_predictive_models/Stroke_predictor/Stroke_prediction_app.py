@@ -43,9 +43,9 @@ def run():
 
         if st.button("Predict"):
             output = predict(model=model, input_df=input_df)
-            output = '$' + str(output)
+            output = str(output)
 
-        st.success('Based on the information provided, the patient has: {}'.format(output))
+        st.success('Based on the information provided, the patient has {}'.format(output))
 
     if add_selectbox == 'Batch':
 
