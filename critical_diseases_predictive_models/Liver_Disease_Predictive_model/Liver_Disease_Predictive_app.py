@@ -82,4 +82,4 @@ if st.button('Predict'):
     
     prediction = predict_quality(model, features_df)
     
-    st.write('Based on values provided, the patient has'+ str(prediction))
+    st.write('Based on values provided, the patient has '+ str(prediction))
