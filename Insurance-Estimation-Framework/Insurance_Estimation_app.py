@@ -53,7 +53,7 @@ def run():
             output = predict(model=model, input_df=input_df)
             output = '$' + str(output)
 
-        st.success('The output is {}'.format(output))
+        st.success('The insurance estimated charge is {}'.format(output))
 
     if add_selectbox == 'Batch':
 
