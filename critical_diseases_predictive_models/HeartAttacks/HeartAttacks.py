@@ -47,7 +47,7 @@ def run():
             output = predict(model=model, input_df=input_df)
             output = str(output)
 
-        st.success('The patient had {}'.format(output))
+        st.success('The patient is has {}'.format(output))
 
     if add_selectbox == 'Batch':
 
