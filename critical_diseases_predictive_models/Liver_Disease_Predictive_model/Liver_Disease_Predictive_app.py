@@ -14,7 +14,7 @@ def predict_quality(model, df):
 model = load_model('liver_disease_deployment_model')
 
 st.title("Liver Disease Predictive Framework")
-st.write('This framework is created to predict liver disease in patients by Okeke')
+st.write('This framework was created to predict liver disease in patients by Okeke')
 
 Age = st.sidebar.slider('Age', 
                         min_value=1.00, 
