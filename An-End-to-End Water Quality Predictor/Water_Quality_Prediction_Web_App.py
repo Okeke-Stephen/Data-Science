@@ -18,7 +18,8 @@ st.title('Water Quality Estimation App')
 st.write('This is a web app to classify the quality of water based on\
          several features shown on the sidebar. Please adjust the\
          value of each feature. Then, click on the Predict button at the bottom to\
-         see the prediction of the classifier. Note: this work is for academic purposes')
+         see the prediction of the classifier.\
+         Note: this work is for academic purposes by Okeke')
 
 
 aluminium = st.sidebar.slider(label = 'Auminium', min_value = 0.00,
