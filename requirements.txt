@@ -1,5 +1,6 @@
-PyCaret==2.3.7
-#ycaret-3.0.0
+#PyCaret==2.3.7
+pycaret-3.0.0
 streamlit
 pandas
 numpy
+scikit-learn
