@@ -18,7 +18,7 @@ def run():
     "How would you like to predict?",
     ("Online", "Batch"))
 
-    st.sidebar.info('This framework is created to predict stroke attacks by Okeke')
+    st.sidebar.info('This framework was created to predict stroke attacks by Okeke')
 
     st.title("Stroke Attacks Predictive Framework")
 
