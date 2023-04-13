@@ -1,4 +1,5 @@
-PyCaret==2.3.7
+#PyCaret==2.3.7
+pycaret-2.3.7
 streamlit
 pandas
 numpy
