@@ -14,7 +14,7 @@ def predict_quality(model, df):
 model = load_model('diabetes_deployment_model')
 
 st.title("Diabetes Predictive Framework")
-st.write('This framework is created to predict diabetes in hospital clients by Okeke')
+st.write('This framework was created to predict diabetes in hospitals by Okeke')
 
 Pregnancies = st.sidebar.slider('Pregnancies', 
                                 min_value=0.00, 
