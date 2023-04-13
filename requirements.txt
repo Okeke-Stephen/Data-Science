@@ -1,4 +1,5 @@
-pycaret==PyCaret 2.3.7
+PyCaret==2.3.7
+#ycaret-3.0.0
 streamlit
 pandas
 numpy
