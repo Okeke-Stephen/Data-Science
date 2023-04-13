@@ -18,7 +18,7 @@ def run():
     "How would you like to predict?",
     ("Online", "Batch"))
 
-    st.sidebar.info('This app is created to predict heart attacks by Okeke')
+    st.sidebar.info('This app was created to predict heart attacks by Okeke')
 
     st.title("Heart Attacks Predictive Framework")
 
