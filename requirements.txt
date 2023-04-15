@@ -3,5 +3,5 @@ PyCaret==2.3.8
 streamlit
 pandas
 numpy
-scikit-learn==0.23.2
+scikit-learn
 preppipe
