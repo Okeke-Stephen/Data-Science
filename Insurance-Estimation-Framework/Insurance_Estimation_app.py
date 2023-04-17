@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 
 model = load_model('ins_deployment_model')
+#model = load_model('ins_deployment_model')
 
 def predict(model, input_df):
     predictions_df = predict_model(estimator=model, data=input_df)
