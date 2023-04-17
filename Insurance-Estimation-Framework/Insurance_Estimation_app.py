@@ -24,7 +24,7 @@ def run():
     "How would you like to predict?",
     ("Online", "Batch"))
 
-    st.sidebar.info('This was created to predict patient hospital insurance charges by Okeke')
+    st.sidebar.info('This app was created to predict patient hospital insurance charges by Okeke')
     #st.sidebar.success('https://www.pycaret.org')
     
     #st.sidebar.image(image_hospital)
