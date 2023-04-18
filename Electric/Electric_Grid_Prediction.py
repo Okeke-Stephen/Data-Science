@@ -86,7 +86,7 @@ features = {'tau1': Reaction_time_of_participant1, 'tau2': Reaction_time_of_part
 
 features_df  = pd.DataFrame([features])
 
-#st.table(features_df)  
+st.table(features_df)  
 
 if st.button('Predict'):
     
