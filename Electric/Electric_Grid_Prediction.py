@@ -9,7 +9,7 @@ def predict_quality(model, df):
     
     predictions_data = predict_model(estimator = model, data = df)
     
-    return predictions_data['Label'][0]
+    return predictions_data['target'][0]
     
 model = load_model('electgrid')
 
@@ -86,7 +86,7 @@ features = {'tau1': tau1, 'tau2':tau2,
 
 features_df  = pd.DataFrame([features])
 
-st.table(features_df)  
+#st.table(features_df)  
 
 if st.button('Predict'):
     
