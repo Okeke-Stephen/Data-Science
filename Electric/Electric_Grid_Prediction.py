@@ -16,71 +16,65 @@ model = load_model('electgrid')
 st.title("Electric Grid Stability Predictive App")
 st.write('This app was created to predict the stability of electric grids by Okeke')
 
-Reaction_time_of_participant1 = st.number_input('tau1', 
+tau1 = st.number_input('Reaction_time_of_participant1', 
                                                 min_value=0.3, 
                                                 max_value=10.0, 
                                                 value=5.0)
 
-Reaction_time_of_participant2 = st.number_input('tau2', 
+tau2 = st.number_input('Reaction_time_of_participant2', 
                                                 min_value=0.3, 
                                                 max_value=10.0, 
                                                 value=5.0)
 
-Reaction_time_of_participant3 = st.number_input('tau3', 
+tau3 = st.number_input('Reaction_time_of_participant3', 
                                                 min_value=0.3, 
                                                 max_value=10.0, 
                                                 value=5.0)
 
-Reaction_time_of_participant4 = st.number_input('tau4', 
+tau4 = st.number_input('Reaction_time_of_participant4', 
                                                 min_value=0.3, 
                                                 max_value=10.0, 
                                                 value=5.0)
 
-Nominal_power_consumed1 = st.number_input('p1', 
+p1 = st.number_input('Nominal_power_consumed1', 
                                         min_value=0.5, 
                                         max_value=10.0, 
                                         value=2.0)
 
-Nominal_power_consumed2 = st.number_input('p2', 
+p2 = st.number_input('Nominal_power_consumed2', 
                                         min_value=-2.0, 
                                         max_value=-1.0, 
                                         value=-1.0)
 
-Nominal_power_consumed3 = st.number_input('p3', 
+p3 = st.number_input('Nominal_power_consumed3', 
                                         min_value=-2.0, 
                                         max_value=-1.0, 
                                         value=-1.0)
 
-Nominal_power_consumed4 = st.number_input('p4', 
+p4 = st.number_input('Nominal_power_consumed4', 
                                         min_value=-2.0, 
                                         max_value=-1.0, 
                                         value=-1.0)
 
-Coefficient_proportional_price1 = st.number_input('g1', 
+g1 = st.number_input('Coefficient_proportional_price1', 
                                                 min_value=0.01, 
                                                 max_value=10.0, 
                                                 value=4.0)
 
-Coefficient_proportional_price2 = st.number_input('g2', 
+g2 = st.number_input('Coefficient_proportional_price2', 
                                                 min_value=0.01, 
                                                 max_value=10.0, 
                                                 value=4.0)
 
-Coefficient_proportional_price3 = st.number_input('g3', 
+g3 = st.number_input('Coefficient_proportional_price3', 
                                                 min_value=0.01, 
                                                 max_value=10.0, 
                                                 value=4.0)
 
-Coefficient_proportional_price4 = st.number_input('g4', 
+g4 = st.number_input('Coefficient_proportional_price4', 
                                                 min_value=0.01, 
                                                 max_value=10.0, 
                                                 value=4.0)
-
-Age = st.sidebar.slider('Age', 
-                        min_value=1.00, 
-                        max_value=150.00, 
-                        value=60.00, 
-                        step = 1.00)
 
 
 features = {'tau1': Reaction_time_of_participant1, 'tau2': Reaction_time_of_participant2,
@@ -92,7 +86,7 @@ features = {'tau1': Reaction_time_of_participant1, 'tau2': Reaction_time_of_part
 
 features_df  = pd.DataFrame([features])
 
-st.table(features_df)  
+#st.table(features_df)  
 
 if st.button('Predict'):
     
