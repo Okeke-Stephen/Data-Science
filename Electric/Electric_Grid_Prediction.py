@@ -77,10 +77,10 @@ g4 = st.number_input('g4',
                                                 value=4.0)
 
 
-features = {'tau1': Reaction_time_of_participant1, 'tau2': Reaction_time_of_participant2,
-            'tau3': Reaction_time_of_participant3, 'tau4': Reaction_time_of_participant4,
-            'p1': Nominal_power_consumed1,'p2': Nominal_power_consumed2,'p3': Nominal_power_consumed3,'p4': Nominal_power_consumed4,
-            'g1': Coefficient_proportional_price1,'g2': Coefficient_proportional_price2,'g3': Coefficient_proportional_price3,'g4': Coefficient_proportional_price4
+features = {'tau1': tau1, 'tau2':tau2,
+            'tau3': tau3, 'tau4': tau4,
+            'p1': p1,'p2': p2,'p3': p3,'p4': p4,
+            'g1': g1,'g2': g2,'g3': g3,'g4': g4
             }
  
 
