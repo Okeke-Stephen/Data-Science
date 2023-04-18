@@ -9,7 +9,7 @@ def predict_quality(model, df):
     
     predictions_data = predict_model(estimator = model, data = df)
     
-    return predictions_data['stabf'][0]
+    return predictions_data['Label'][0]
     
 model = load_model('electgrid')
 
