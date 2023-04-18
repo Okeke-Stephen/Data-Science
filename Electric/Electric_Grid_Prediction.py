@@ -16,62 +16,62 @@ model = load_model('electgrid')
 st.title("Electric Grid Stability Predictive App")
 st.write('This app was created to predict the stability of electric grids by Okeke')
 
-tau1 = st.number_input('Reaction_time_of_participant1', 
+tau1 = st.number_input('tau1', 
                                                 min_value=0.3, 
                                                 max_value=10.0, 
                                                 value=5.0)
 
-tau2 = st.number_input('Reaction_time_of_participant2', 
+tau2 = st.number_input('tau2', 
                                                 min_value=0.3, 
                                                 max_value=10.0, 
                                                 value=5.0)
 
-tau3 = st.number_input('Reaction_time_of_participant3', 
+tau3 = st.number_input('tau3', 
                                                 min_value=0.3, 
                                                 max_value=10.0, 
                                                 value=5.0)
 
-tau4 = st.number_input('Reaction_time_of_participant4', 
+tau4 = st.number_input('tau4', 
                                                 min_value=0.3, 
                                                 max_value=10.0, 
                                                 value=5.0)
 
-p1 = st.number_input('Nominal_power_consumed1', 
+p1 = st.number_input('p1', 
                                         min_value=0.5, 
                                         max_value=10.0, 
                                         value=2.0)
 
-p2 = st.number_input('Nominal_power_consumed2', 
+p2 = st.number_input('p2', 
                                         min_value=-2.0, 
                                         max_value=-1.0, 
                                         value=-1.0)
 
-p3 = st.number_input('Nominal_power_consumed3', 
+p3 = st.number_input('p3', 
                                         min_value=-2.0, 
                                         max_value=-1.0, 
                                         value=-1.0)
 
-p4 = st.number_input('Nominal_power_consumed4', 
+p4 = st.number_input('p4', 
                                         min_value=-2.0, 
                                         max_value=-1.0, 
                                         value=-1.0)
 
-g1 = st.number_input('Coefficient_proportional_price1', 
+g1 = st.number_input('g1', 
                                                 min_value=0.01, 
                                                 max_value=10.0, 
                                                 value=4.0)
 
-g2 = st.number_input('Coefficient_proportional_price2', 
+g2 = st.number_input('g2', 
                                                 min_value=0.01, 
                                                 max_value=10.0, 
                                                 value=4.0)
 
-g3 = st.number_input('Coefficient_proportional_price3', 
+g3 = st.number_input('g3', 
                                                 min_value=0.01, 
                                                 max_value=10.0, 
                                                 value=4.0)
 
-g4 = st.number_input('Coefficient_proportional_price4', 
+g4 = st.number_input('g4', 
                                                 min_value=0.01, 
                                                 max_value=10.0, 
                                                 value=4.0)
